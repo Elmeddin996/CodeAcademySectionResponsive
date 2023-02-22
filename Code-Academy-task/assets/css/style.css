@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+}
+.teaching-fields{
+    order: 1;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.digial-marketing{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.6s;
+}
+
+.digial-marketing:hover{
+    transform: scale(1.15, 1.1);
+    background-color: #872891;
+    color: white;
+
+}
+
+.design{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.6s;
+}
+
+.design:hover{
+    transform: scale(1.15, 1.1);
+    background-color: #FFCD05;
+    color: white;
+
+}
+
+.syber-security{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.6s;
+}
+
+.syber-security:hover{
+    transform: scale(1.15, 1.1);
+    background-color: #00B45A;
+    color: white;
+
+}
+
+.programming{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.6s;
+}
+
+.programming:hover{
+    transform: scale(1.15, 1.1);
+    background-color: #2382C8;
+    color: white;
+}
+
+.teaching-fields-texts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaching-fields-texts h2{
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.teaching-fields-texts h3{
+    font-weight: 300;
+    font-size: 50px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.teaching-fields-texts p{
+    margin-top: 50px;
+    width: 50%;
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 0.5;
+
+}
+
+.header-this-section{
+    position: relative;
+}
+
+.teaching-fields-texts h3:after{
+    content: "";
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #b813a2;
+}
+
+@media only screen and (max-width:768px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teaching-fields{
+        width: 80%;
+    }
+ .programming{
+    width: 80%;
+ }
+
+ .syber-security{
+    width: 80%;
+ }
+
+ .digial-marketing{
+    width: 80%;
+ }
+
+ .design{
+    width: 80%;
+ }
+
+}
